@@ -82,6 +82,7 @@ func GetMenu(c echo.Context) error {
 
 
 func main() {
+	e := echo.New()
 	// Untuk pemanggilannya layaknya endpoint pada javascript berupa url nya seperti localhost:3000/menu/food
 	e.GET("/menu", GetMenu)
 	e.GET("/menu/food", getMakananSaji)
